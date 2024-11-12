@@ -1,0 +1,20 @@
+[package]
+name = "voting_backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+actix-cors = "0.7"
+env_logger = "0.11.5" 
+log= "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+substrate-api-client = "1.0.0"  # for connecting with Substrate
+ring = "0.17.8"               # for cryptographic operations
+jsonwebtoken = "9.3.0"           # for handling JWT tokens if needed
+frame-support = "38.0.0"
+frame-system = "38.0.0"
+sp-core = "34.0.0"
+sp-runtime = "39.0.2"
